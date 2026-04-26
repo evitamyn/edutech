@@ -13,7 +13,7 @@ Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar un
 
 ### Persiapan
 
-Sumber data: [student's performance][https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv]
+Sumber data: [Student's Performance](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance 'Dicoding Github - Student's Performance')
 
 Setup environment:
 ```
