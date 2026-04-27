@@ -3,8 +3,8 @@ import numpy as np
 import streamlit as st
 import joblib
 
-model = joblib.load('H:\edutech\best_model.pkl')
-preprocess = joblib.load('H:\edutech\preprocessor.pkl')
+model = joblib.load('best_model.pkl')
+preprocess = joblib.load('preprocessor.pkl')
 
 st.set_page_config(page_title="Student Performance Predictor", layout='wide')
 
