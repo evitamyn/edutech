@@ -59,10 +59,6 @@ atau dijalankan melalui link berikut: [Link Prototype](https://studentsperforman
 
 Dengan memasukkan data mahasiswa pada form input yang disediakan, sistem akan memproses input tersebut menggunakan model yang telah dilatih dan menghasilkan prediksi status mahasiswa (Dropout, Enrolled, atau Graduate).
 
-```
-
-```
-
 ## Conclusion
 Permasalahan dropout di Jaya Jaya Institut sebesar 32,1% merupakan angka yang perlu ditindak lanjuti. Hal ini disebabkan oleh beberapa faktor berikut:
 - **Faktor Akademik**
