@@ -112,6 +112,12 @@ input_data = pd.DataFrame([{
     'Curricular_units_2nd_sem_enrolled': Curricular_units_2nd_sem_enrolled,
 }])
 
+for col in preprocess.feature_names_in_:
+    if col not in input_data.columns:
+        input_data[col] = 0
+
+input_data = input_data[preprocess.feature_names_in_]
+
 if st.button("Predict"): 
     X_input = preprocess.transform(input_data)
     prediction = model.predict(X_input)[0]
