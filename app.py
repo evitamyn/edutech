@@ -10,8 +10,7 @@ st.set_page_config(page_title="Student Performance Predictor", layout='wide')
 
 st.markdown("""
 # 🏫 Jaya-Jaya Institution
-## Student Performance Prediction
-### Sistem Prediksi Mahasiswa
+## Student Performance Prediction System
 """)
 st.markdown("---")
 
@@ -21,7 +20,7 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     
     Age_at_enrollment = st.number_input('Age at Enrollment', 
-                                        min_value=15, max_value=70, value=18)
+                                        min_value=17, max_value=70)
 with col2:
     gender_map = {0: 'Female', 1: 'Male'}
     Gender = st.selectbox('Gender',
@@ -68,28 +67,28 @@ st.markdown("## 🎓 Akademik")
 st.markdown("### Semester 1")
 col8, col9 = st.columns(2)
 with col8:
-    Curricular_units_1st_sem_approved = st.number_input("1st Sem Approved", min_value=0, max_value=50, value=0)
+    Curricular_units_1st_sem_approved = st.number_input("1st Sem Approved", min_value=0, max_value=26, value=0)
 with col9:
-    Curricular_units_1st_sem_enrolled = st.number_input("1st Sem Enrolled", min_value=0, max_value=50, value=0)
+    Curricular_units_1st_sem_enrolled = st.number_input("1st Sem Enrolled", min_value=0, max_value=26, value=0)
 
 col10, col11 = st.columns(2)
 with col10:
-    Curricular_units_1st_sem_evaluations = st.number_input("1st Sem Evaluations", min_value=0, max_value=50, value=0)
+    Curricular_units_1st_sem_evaluations = st.number_input("1st Sem Evaluations", min_value=0, max_value=45, value=0)
 with col11:
-    Curricular_units_1st_sem_grade = st.number_input("1st Sem Grade", min_value=0, max_value=50, value=0)
+    Curricular_units_1st_sem_grade = st.number_input("1st Sem Grade", min_value=0, max_value=18.875, value=0)
 
 st.markdown("### Semester 2")
 col12, col13 = st.columns(2)
 with col12:
-    Curricular_units_2nd_sem_approved = st.number_input("2nd Sem Approved", min_value=0, max_value=50, value=0)
+    Curricular_units_2nd_sem_approved = st.number_input("2nd Sem Approved", min_value=0, max_value=20, value=0)
 with col13:
-    Curricular_units_2nd_sem_enrolled = st.number_input("2nd Sem Enrolled", min_value=0, max_value=50, value=0)
+    Curricular_units_2nd_sem_enrolled = st.number_input("2nd Sem Enrolled", min_value=0, max_value=23, value=0)
 
 col14, col15 = st.columns(2)
 with col14:
-    Curricular_units_2nd_sem_evaluations = st.number_input("2nd Sem Evaluations", min_value=0, max_value=50, value=0)
+    Curricular_units_2nd_sem_evaluations = st.number_input("2nd Sem Evaluations", min_value=0, max_value=33, value=0)
 with col15:
-    Curricular_units_2nd_sem_grade = st.number_input("2nd Sem Grade", min_value=0, max_value=50, value=0)
+    Curricular_units_2nd_sem_grade = st.number_input("2nd Sem Grade", min_value=0, max_value=18.571429, value=0)
 
 input_data = pd.DataFrame([{
     'Age_at_enrollment': Age_at_enrollment,
