@@ -9,22 +9,22 @@ preprocess = joblib.load('preprocessor.pkl')
 st.set_page_config(page_title="Student Performance Predictor", layout='wide')
 
 st.markdown("""
-# Jaya-Jaya Institution
+# 🏫 Jaya-Jaya Institution
 ## Student Performance Prediction
 ### Sistem Prediksi Mahasiswa
 """)
 st.markdown("---")
 
-st.markdown("## Informasi Mahasiswa")
+st.markdown("## 🪪 Informasi Mahasiswa")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     
-    Age_at_enrollment = st.number_input("Age at Enrollment", 
+    Age_at_enrollment = st.number_input('Age at Enrollment', 
                                         min_value=15, max_value=70, value=18)
 with col2:
     gender_map = {0: 'Female', 1: 'Male'}
-    Gender = st.selectbox("Gender",
+    Gender = st.selectbox('Gender',
                           options=list(gender_map.keys()),
                           format_func=lambda x: gender_map[x])
 with col3:
@@ -43,7 +43,7 @@ with col4:
                                               options=list(attendance_map.keys()),
                                               format_func=lambda x: attendance_map[x])
 st.markdown("---")
-st.markdown("## Finansial")
+st.markdown('## 💰 Finansial')
 col5, col6, col7 = st.columns(3)
 with col5:
     scholar_map = {0: 'No Scholarship',
@@ -64,7 +64,7 @@ with col7:
                           options=list(debtor_map.keys()),
                           format_func=lambda x: debtor_map[x])
 st.markdown("---")
-st.markdown("## Akademik")
+st.markdown("## 🎓 Akademik")
 st.markdown("### Semester 1")
 col8, col9 = st.columns(2)
 with col8:
@@ -118,13 +118,13 @@ for col in preprocess.feature_names_in_:
 
 input_data = input_data[preprocess.feature_names_in_]
 
-if st.button("Predict"): 
+if st.button('Predict'): 
     X_input = preprocess.transform(input_data)
     prediction = model.predict(X_input)[0]
 
-    label_map = {0: "Dropout 🔴",
-                 1: "Enrolled 🟡",
-                 2: "Graduate 🟢"}
+    label_map = {0: '🔴 Dropout',
+                 1: '🟡 Enrolled',
+                 2: '🟢 Graduate'}
     
     result = label_map[prediction]
-    st.success(f"🎯 Prediksi Mahasiswa adalah: **{result}**")
+    st.success(f'🎯 Prediksi Mahasiswa adalah: **{result}**')
