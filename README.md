@@ -16,22 +16,22 @@ Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar un
 Sumber data: [Student's Performance](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance)
 
 Setup environment:
-### 1. Clone Repository
+1. Clone Repository
 ```
 git clone https://github.com/evitamyn/Beijing-Air-Quality.git
 ```
-### 2. Buat Environment
+2. Buat Environment
 ```
 conda create --name main-ds python = 3.13.9 
 conda activate main-ds
 ```
 
-## 3. Install Packages
+3. Install Packages
 ```
 pip install -r requirements.txt
 ```
 
-### 3. Jalankan Streamlit
+3. Jalankan Streamlit
 ```
 streamlit run app.py
 ```
