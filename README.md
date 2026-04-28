@@ -13,9 +13,9 @@ Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar un
 
 ### Persiapan
 
-Sumber data: [Student's Performance](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance)
+**Sumber data:** [Student's Performance](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance)
 
-Setup environment:
+**Setup environment:**
 1. Clone Repository
 ```
 git clone https://github.com/evitamyn/Beijing-Air-Quality.git
