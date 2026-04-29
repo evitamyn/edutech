@@ -60,13 +60,23 @@ atau dijalankan melalui link berikut: [Link Prototype](https://studentsperforman
 Dengan memasukkan data mahasiswa pada form input yang disediakan, sistem akan memproses input tersebut menggunakan model yang telah dilatih dan menghasilkan prediksi status mahasiswa (Dropout, Enrolled, atau Graduate).
 
 ## Conclusion
-Permasalahan dropout di Jaya Jaya Institut sebesar 32,1% merupakan angka yang perlu ditindak lanjuti. Hal ini disebabkan oleh beberapa faktor berikut:
+1. Permasalahan dropout di Jaya Jaya Institut sebesar 32,1% merupakan angka yang perlu ditindak lanjuti. Hal ini disebabkan oleh beberapa faktor berikut:
 - **Faktor Akademik**
-  Akademik merupakan faktor terkuat dalam permasalahan ini. Performa di tahun pertama (Semester 1 & 2) adalah penentu mutlak. Mahasiswa yang gagal meluluskan mata kuliah (approved units) dan memiliki nilai (grades) rendah di awal semester memiliki risiko dropout.
+  Akademik merupakan faktor terkuat dalam permasalahan ini. Performa di tahun pertama (Semester 1 & 2) adalah penentu mutlak. Selain itu, rendahnya nilai akademik serta sedikitnya keterlibatan mahasiswa dalam evaluasi akademik juga berkaitan dengan tingginya risiko dropout. Hasil feature importance menunjukkan bahwa curricular units approved dan enrolled pada semester awal menjadi faktor paling penting dalam prediksi dropout mahasiswa.
+
 - **Faktor Ekonomi**
-  Masalah ekonomi pribadi yang dialami oleh mahasiswa seperti tunggakan biaya kuliah dan kepemilikan hutang menjadi faktor yang berpengaruh pada alasan dropout dibadningkan masalah ekonomi negara. Namun, beasiswa dapat dikatakan menjadi alasan mahasiswa bertahan.
+  Masalah ekonomi pribadi yang dialami oleh mahasiswa seperti tunggakan biaya kuliah cenderung memiliki risiko dropout yang lebih tinggi dibandingkan mahasiswa yang pembayaran kuliahnya lancar. Sedangkan masalah ekonomi negara tidak berpengaruh pada alasan mahasiswa dropout. Namun, beasiswa dapat dikatakan menjadi alasan mahasiswa bertahan. 
+
 - **Faktor Demografis**
-  Mahasiswa dengan karakteristik tertentu cenderung untuk dropout, seperti mahasiswa berjenis kelamin laki-laki, usia yang lebih tua saat mendaftar, mahasiswa yang mengikuti kelas malam, serta mahasiswa yang sudah menikah.
+  Mahasiswa dengan karakteristik tertentu memiliki kecenderungan dropout yang lebih tinggi, seperti mahasiswa yang mendaftar pada usia lebih tua, mahasiswa kelas malam, mahasiswa yang sudah menikah. Selain itu, beberapa program studi seperti Basic Education dan Social Service menunjukkan tingkat dropout yang lebih tinggi. Latar belakang pekerjaan orang tertentu dan jalur pendaftaran internasional juga ditemukan berkaitan dengan risiko dropout mahasiswa.
+
+2. Model terbaik adalah Logistic Reggresion dengan
+   - Accuracy: 0.91
+   - Precision: 0.90
+   - Recall: 0.87
+   - F1 Score : 0.88
+   Hasil ini menunjukkan bahwa model mampu melakukan prediksi dropout dengan baik dan dapat digunakan sebagai sistem deteksi dini mahasiswa yang berisiko dropout.
+
 
 ### Rekomendasi Action Items
 Rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka, yaitu
